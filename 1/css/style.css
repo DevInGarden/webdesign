@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    color: #333333;
+    font-family: "맑은 고딕";
+    list-style: none;
+}
+
+body {
+    font-size: 20px;
+    background-color: #FFFFFF;
+    width: 1000px;
+    height: 650px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+header {
+    float: left;
+    position: absolute;
+}
+
+.top {
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+}
+
+.navi>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navi>li>a:hover {
+    color: yellow;
+    background-color: #dddddd;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 190px;
+    top: 100px;
+}
+
+.submenu>li {
+    width: 180px;
+    height: 160px;
+    background-color: #eeeeee;
+}
+
+.submenu>li>a {
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.submenu>li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.imgslide {
+    float: right;
+    width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgslide span {
+    position: absolute;
+    width: 200px;
+    background-color: rgba(56, 56, 56, 0.6);
+    font-weight: bold;
+    top: 50%;
+    left: 40%;
+    color: white;
+    text-align: center;
+}
+
+.contents {
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+
+.notice {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.notice h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notice ul {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.notice span {
+    float: right;
+    font-size: 14px;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.tab {
+    float: left;
+    width: 300px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.gallery h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    float: left;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+.shortcut {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+.shortcut img {
+    float: right;
+    width: 190px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.shortcut span {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.6);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+footer {
+    float: right;
+    width: 800px;
+    height: 100px;
+    background-color: #eeeeee;
+}
+
+.btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.btlogo img {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.copy {
+    float: left;
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.site {
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+
+.site select {
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+    width: 150px
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 119, 119, 0.6);
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    background-color: white;
+    left: 40%;
+    top: 30%;
+}
+
+.uptitle {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upbody {
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+    background-color: gray;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
