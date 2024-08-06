@@ -20,6 +20,17 @@ a {
     display: block;
 }
 
+.bodywrap {
+    width: 1200px;
+    height: 500px;
+}
+
+.otherwrap {
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+
 .wrap {
     width: 1200px;
 }
@@ -130,6 +141,7 @@ header {
 .contents {
     width: 1200px;
     height: 200px;
+    position: absolute;
 }
 
 .tabmenu {
