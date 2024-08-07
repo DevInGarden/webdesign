@@ -16,4 +16,11 @@ jQuery(document).ready(function () {
         $(".slidelist").delay(2000);
     });
 
+    $(".notice li:first").click(function () {
+        $("#modal").addClass("active")
+    });
+    $(".btn").click(function () {
+        $("#modal").removeClass("active")
+    });
+
 });
