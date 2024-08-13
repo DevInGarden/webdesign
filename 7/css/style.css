@@ -24,11 +24,13 @@ a {
 header {
     width: 1200px;
     height: 100px;
+    position: relative;
 }
 
 .top {
     width: 1200px;
     height: 100px;
+    position: absolute;
 }
 
 .logo {
@@ -47,12 +49,12 @@ header {
 
 .menu {
     float: right;
-    width: 950px;
-    /* position: absolute; */
-    /* right: 0px; */
-    /* top: 30px; */
+    width: 720px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
     background-color: white;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .navi {
@@ -61,7 +63,6 @@ header {
 
 .navi>li {
     float: left;
-    margin-top: 30px;
     background-color: #5e1742;
     width: 180px;
 }
@@ -134,12 +135,93 @@ header {
 .contents {
     width: 1200px;
     height: 200px;
+    position: absolute;
 }
 
 .tabmenu {
     float: left;
     width: 400px;
     height: 200px;
+}
+
+.tabmenu>li {
+    margin-top: 10px;
+    width: 100px;
+    float: left;
+    line-height: 30px;
+}
+
+.tabmenu>li>a {
+    font-size: 16px;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+
+.tabmenu>li>a:hover {
+    background-color: #eeeeee;
+}
+
+.tabmenu>li:first-child a {
+    border-right: none;
+}
+
+.tabmenu>li.active>a {
+    background-color: #ffffff;
+}
+
+.tabmenu>li div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+    top: 40px;
+}
+
+.tabmenu>li.active div {
+    width: 400px;
+    height: 140px;
+    border: 1px solid #dddddd;
+}
+
+.notice ul {
+    float: left;
+    width: 400px;
+}
+
+.notice li {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.notice li:nth-child(2n) {
+    background-color: #cccccc;
+}
+
+.notice li span {
+    float: right;
+    margin-right: 2px;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery li {
+    float: left;
+}
+
+.gallery img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.gallery li:hover {
+    opacity: 0.5;
 }
 
 .otherwrap {
@@ -250,4 +332,52 @@ footer {
 .sns img {
     width: 50px;
     height: 50px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    width: 400px;
+    height: 350px;
+    position: fixed;
+    background-color: white;
+    left: 40%;
+    top: 40%;
+}
+
+.uptitle {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upbody {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.btn {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #dddddd;
 }
