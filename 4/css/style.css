@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+
+body {
+    font-size: 20px;
+    background-color: #ffffff;
+    min-width: 1200px;
+    height: 700px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #cccccc;
+}
+
+.bodywrap {
+    width: 1200px;
+    height: 500px;
+}
+
+.wrap {
+    width: 1200px;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+.logo img {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    float: right;
+    width: 900px;
+    height: 100px;
+    z-index: 1;
+}
+
+.navi {
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.navi>li {
+    width: 180px;
+    float: left;
+}
+
+.navi>li>a {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.navi>li>a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.otherwrap {
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+
+.submenu {
+    width: 180px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.submenu>li>a {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #cccccc;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.submenu>li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.imgslide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidelist {
+    width: 1200px;
+    height: 900px;
+}
+
+.slidelist a {
+    width: 1200px;
+    height: 300px;
+}
+
+.slidelist img {
+    width: 1200px;
+    height: 300px;
+}
+
+.imgslide span {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-left: 400px;
+}
+
+.contents {
+    width: 1200px;
+    height: 200px;
+    position: absolute;
+}
+
+.tabmenu {
+    float: left;
+    width: 395px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tabmenu>li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+
+.tabmenu>li>a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    background-color: #cccccc;
+    border-bottom: none;
+}
+
+.tabmenu>li>a:hover {
+    background-color: #eeeeee;
+}
+
+.tabmenu>li:first-child a {
+    border-right: none;
+}
+
+.tabmenu>li.active>a {
+    background-color: #ffffff;
+}
+
+.tabmenu>li div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+
+.notice ul {
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.notice li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.notice li:nth-child(2n) {
+    background-color: #cccccc;
+}
+
+.notice span {
+    float: right;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.gallery img:hover {
+    opacity: 0.5;
+}
+
+.banner {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.banner img {
+    float: right;
+    width: 390px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner span {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.shortcut {
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+
+.shortcut img {
+    float: right;
+    width: 390px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shortcut span {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.btlogo img {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copy {
+    float: left;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.site {
+    float: right;
+    width: 300px;
+    height: 100px;
+}
+
+.site ul {
+    float: right;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.site li {
+    display: inline-block;
+}
+
+.site img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    background-color: #ffffff;
+    left: 40%;
+    top: 25%;
+}
+
+.uptitle {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upbody {
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+    width: 80px;
+    height: 20px;
+    background-color: gray;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}
