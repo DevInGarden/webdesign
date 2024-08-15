@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+
+body {
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+header {
+    float: left;
+}
+
+.top {
+    float: left;
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: #171c61;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 180px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+}
+
+.navi>li {
+    width: 180px;
+    height: 50px;
+}
+
+.navi>li>a {
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+    top: -50px;
+    left: 190px;
+}
+
+.submenu>li>a {
+    width: 180px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+}
+
+.submenu>li>a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.bodywrap {
+    float: right;
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+}
+
+.contents {
+    float: left;
+    width: 400px;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: calc(100% / 4);
+    display: flex;
+    align-items: center;
+}
+
+.im {
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.bntext {
+    font-size: 16px;
+    width: 70%;
+    height: auto;
+    padding: 2px;
+}
+
+.notice {
+    float: left;
+    width: 100%;
+    height: calc(100% / 4);
+    border-top: 2px solid gray;
+}
+
+.tab {
+    width: 100%;
+    height: 50px;
+}
+
+.tab h4 {
+    line-height: 50px;
+    float: left;
+    font-weight: bold;
+}
+
+.notice li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.notice span {
+    float: right;
+    font-size: 14px;
+}
+
+.notice li :hover {
+    font-weight: bold;
+}
+
+.gallery {
+    float: left;
+    width: 100%;
+    height: calc(100% / 4);
+    border-top: 2px solid gray;
+}
+
+.gallery ul {
+    display: flex;
+}
+
+.gallery img {
+    width: 140px;
+    height: 140px;
+}
+
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+.shortcut {
+    float: left;
+    width: 100%;
+    height: calc(100% / 4);
+    display: flex;
+    border-top: 2px solid gray;
+}
+
+.shortcut img {
+    width: 100px;
+    height: 100px;
+    float: right;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+.shortcut img:hover {
+    opacity: 0.5;
+}
+
+.shortcut span {
+    float: left;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+    margin-left: 15px;
+}
+
+.imgslide {
+    float: right;
+    width: calc(100% - 400px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidelist {
+    width: 300%;
+    height: 100%;
+}
+
+.slidelist li {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+}
+
+.slidelist img {
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+}
+
+.slidelist span {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    top: 45%;
+    margin-left: 500px;
+}
+
+#modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(170, 170, 170, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    left: 40%;
+    top: 40%;
+}
+
+.uptitle {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.upbody {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.btn {
+    width: 80px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #aeadad;
+}
+
+.btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.btlogo img {
+    width: 180px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.copy {
+    float: left;
+    height: 100px;
+    width: calc(100% - 500px);
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.sns {
+    float: right;
+    width: 300px;
+    height: 100px;
+}
+
+.sns ul {
+    float: right;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.sns li {
+    display: inline-block;
+}
+
+.sns img {
+    width: 50px;
+    height: 50px;
+}
+
+.sns img:hover {
+    opacity: 0.5;
+}
