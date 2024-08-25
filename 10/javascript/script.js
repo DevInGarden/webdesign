@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
         $(".slidelist").delay(2000);
         $(".slidelist").animate({ marginLeft: '-200%' })
         $(".slidelist").delay(2000);
-        $(".slidelist").animate({ marginLeft: 0 })
+        $(".slidelist").animate({ marginLeft:  })
         $(".slidelist").delay(2000);
     })
 
